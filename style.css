@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(7, 5vw);
+    gap: 5px;
+
+    grid-template-areas: 'img1 img1 img2 img2 img2 img3 img4 img4'
+                        'img1 img1 img2 img2 img2 img3 img4 img4'
+                        'img5 img5 img2 img2 img2 img8 img8 img9'
+                        'img5 img5 img6 img6 img7 img8 img8 img9'
+                        'img5 img5 img6 img6 img13 img13 img13 img9'
+                        'img10 img11 img11 img12 img13 img13 img13 img14'
+                        'img10 img11 img11 img12 img13 img13 img13 img14';
+}
+
+.grid > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img1 { grid-area: img1; }
+.img2 { grid-area: img2; }
+.img3 { grid-area: img3; }
+.img4 { grid-area: img4; }
+.img5 { grid-area: img5; }
+.img6 { grid-area: img6; }
+.img7 { grid-area: img7; }
+.img8 { grid-area: img8; }
+.img9 { grid-area: img9; }
+.img10 { grid-area: img10; }
+.img11 { grid-area: img11; }
+.img12 { grid-area: img12; }
+.img13 { grid-area: img13; }
+.img14 { grid-area: img14; }
